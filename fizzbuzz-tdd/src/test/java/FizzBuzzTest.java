@@ -25,4 +25,9 @@ public class FizzBuzzTest {
     void testNumberDivisibleByFive(){
         assertEquals("Buzz", fizzBuzz.getOutputFor(10));
     }
+
+    @Test
+    void testNumberContainsThree(){
+        assertEquals("Fizz", fizzBuzz.getOutputFor(23));
+    }
 }
