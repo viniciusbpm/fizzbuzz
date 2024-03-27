@@ -35,4 +35,9 @@ public class FizzBuzzTest {
     void testNumberContainsFive(){
         assertEquals("Buzz", fizzBuzz.getOutputFor(52));
     }
+
+    @Test
+    void testNumberContainsThreeAndFive(){
+        assertEquals("FizzBuzz", fizzBuzz.getOutputFor(53));
+    }
 }
