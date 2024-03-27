@@ -29,13 +29,17 @@ public class FizzBuzzRule {
     }
 
     private void addIfContains(String string, int value){
-        if(inputContainsValue(value)){
+        if(inputContainsValue(value) && inputHasTwoDigits()){
             output += string;
         }
     }
 
     private boolean inputContainsValue(int value){
         return String.valueOf(input).contains(String.valueOf(value));
+    }
+
+    private boolean inputHasTwoDigits(){
+        return input >= 10;
     }
 
     private void addInputToOutputIfOutputIsEmpty(){
