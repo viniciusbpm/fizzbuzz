@@ -1,9 +1,9 @@
 public class FizzBuzz {
+    private String output;
     public String getOutputFor(int input){
-        if(input % 3 == 0){
-            return "Fizz";
-        }
-        
-        return String.valueOf(input);
+        FizzBuzzRule rule = new FizzBuzzRule(input);
+        return rule.getOutput();
     }
+
+
 }
