@@ -50,4 +50,9 @@ public class FizzBuzzTest {
     void testNumberIsThree(){
         assertEquals("Fizz", fizzBuzz.getOutputFor(3));
     }
+
+    @Test
+    void testNumberIsFive(){
+        assertEquals("Buzz", fizzBuzz.getOutputFor(5));
+    }
 }
